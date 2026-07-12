@@ -719,7 +719,8 @@ def handle_live_stats(tg_id):
 
 # --- CONVERSATIONAL SMART AI CHAT SUPPORT ---
 def process_ai_chat_response(message):
-    tg_id = message.from_user.id    query_text = message.text.lower().strip()
+    tg_id = message.from_user.id
+query_text = message.text.lower().strip()
     
     response = ""
     if "hello" in query_text or "hi" in query_text or "helo" in query_text:
